@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #121826;
+    --royal-blue: #4138C2;
+    --red: #E14F62;
+    --purple: #9D59EF;
+    --fucsia: #C951E7;
+    --blue: #4E80EE;
+    --green: #5EC269;
+    --yellow: #E2B53E;
+    --cyan: #52B3D0;
+    --orange: #E87B35;
+    --gray: #9DA3AE;
+    --white: #FFFFFF;
+    --soft-blue: #C9D2FA;
+    --soft-yellow: #FDF9C9;
+    --soft-orange: #FCEED8;
+    --soft-green: #E2FBE8;
+    --mint: #D5FAF1;
+    --soft-gray: #E5E7EB;
+    --soft-purple: #F1E8FD;
+    --soft-red: #FBE5E6;
+    --v-soft-blue: #DEE9FC;
+}
+
+body {
+    padding: 2rem 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.logo{
+    width: 2rem;
+}
+
+/* ------HELPER CLASSES------- */
+.width{
+    width: 100%;
+    max-width: calc(100% - 2 * clamp(16px, 5vw, 72px));
+    margin: 0 auto;
+}
+
+/* ------NAVIGATION------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40rem;
+    line-height: 5rem;
+    margin-bottom: 4rem;
+}
+
+button{
+    display: inline-block;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.connect{
+    border: 2px solid var(--soft-gray);
+    background-color: var(--white);
+    padding: 12px 35px;
+    border-radius: 25px;
+    color: var(--royal-blue);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background .5s;
+}
+
+.connect:hover,
+.explore:hover{
+    background-color:var(--soft-blue);
+}
+
+/* ------HEADER------- */
+header{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.echo-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--black);
+    width: 34rem;
+}
+
+.echo{
+    color: var(--royal-blue);
+}
+ 
+.desc-title{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.create{
+    border: none;
+    background-color: var(--royal-blue);
+    border-radius: 25px;
+    padding: 12px 33px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background .5s;
+}
+
+.create:hover {
+    background-color: #362ea7;
+}
+
+.explore {
+    border: 2px solid var(--soft-gray);
+    background-color: var(--white);
+    padding: 12px 28px;
+    border-radius: 25px;
+    color: var(--royal-blue);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background .5s;
+}
+
+/* ------MAIN------- */
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.content-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.join{
+    width: 26rem;
+    text-align: center;
+}
+
+/* ------EMOJIS------- */
+.emoji-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 0;
+    margin-top: 64px;
+    width: 100%;
+}
+
+.emoji-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 25%;
+    gap: 24px;
+}
+
+.emoji{
+    display: block;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+.emoji-label{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+
+/* ------EMOJI TEXT & BACKGROUND COLORS------- */
+.soft-blue {
+    background-color: var(--soft-blue);
+}
+.soft-green {
+    background-color: var(--soft-green);
+
+}
+.soft-red {
+    background-color: var(--soft-red);
+}
+.soft-yellow {
+    background-color: var(--soft-yellow);
+}
+.soft-orange {
+    background-color: var(--soft-orange);
+}
+.v--soft-blue {
+    background-color: var(--v-soft-blue);
+}
+.soft-purple {
+    background-color: var(--soft-purple);
+}
+.mint {
+    background-color: var(--mint);
+}
+
+.blue-txt{
+    color: var(--royal-blue);
+}
+.green-txt{
+    color: var(--green);
+}
+.red-txt{
+    color: var(--red);
+}
+.yellow-txt{
+    color: var(--yellow);
+}
+.orange-txt{
+    color: var(--orange);
+}
+.v--blue-txt{
+    color: var(--blue);
+}
+.purple-txt{
+    color: var(--purple);
+}
+.cyan-txt{
+    color: var(--cyan);
+}
+
+/* ------BEGIN SECTION------- */
+.begin{
+    padding: 188px 0;
+    background: url(resources/footer_background_image.png) center/cover no-repeat;
+}
+
+.begin-wrapper{
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-title{
+    color: white;
+    margin-bottom: 1rem;
+    width: 31rem;
+    text-align: center;
+}
+
+/* ------FOOTER------- */
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.rights{
+    font-weight: 200;
+    margin-left: 1rem;
+}
+
+.bold-txt{
+    cursor: pointer;
+}
+
+.author-info {
+font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: black;
+}
+
+.author-info a {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+/* ------MEDIA QUERIES------- */
+@media (max-width: 850px) {
+    nav{
+        gap: 20rem;
+    }
+    header{
+        flex-direction: column-reverse;
+    }
+
+    .emoji-text{
+        flex-direction: row;
+        gap: 0;
+    }
+    .emoji-wrapper{
+        justify-content: center;
+    }
+    .emoji-item{
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 570px) {
+    h1{
+        width: 28rem;
+    }
+    nav{
+        gap: 10rem;
+    }
+    .footer-title{
+        width: 28rem;
+    }
+    .emoji-wrapper{
+        justify-content: center;
+    }
+}
